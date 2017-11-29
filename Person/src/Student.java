@@ -5,7 +5,7 @@ public class Student extends Person{
 	
 	public Student(double gpa, String gender, String major, String firstName, String familyName, int age, double height)
 	{
-		super(firstName, familyName, age, height)
+		super(firstName, familyName, age, height);
 		this.gpa = gpa;
 		this.gender = gender;
 		this.major = major;
@@ -13,19 +13,16 @@ public class Student extends Person{
 	
 	public double getGpa()
 	{
-		double[] gpas = new double[1];  
-		for (Double gpa : gpas)
-		gpas[i] = (double)(Math.random()*4);
-		return gpas;
+		return gpa;
 	}
 	
 	public String getMajor()
 	{
-		
+		return major;
 	}
 	
-	public String toString()
-	{
-		return (familyNames + " ," + firstNames)
+	@Override
+	public String toString() {
+		return "Student FirstName =" + getFirstName() + ", FamilyName =" + getFamilyName();
 	}
 }

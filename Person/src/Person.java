@@ -1,4 +1,3 @@
-import java.util.Random;
 
 public abstract class Person {
 	private String firstName; 
@@ -13,19 +12,39 @@ public abstract class Person {
 		this.age = age;
 		this.height = height;
 	}
-
-	public String getFirstName()
-	{
-		Random r1 = new Random();
-		return firstNames[r1.nextInt(firstNames.length)];
-	}
-
-	public String getFamilyName()
-	{
-		Random r2 = new Random();
-		return familyNames[r2.nextInt(familyNames.length)];
-	}
 	
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getFamilyName() {
+		return familyName;
+	}
+
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
 	public abstract String toString();
 
 }
