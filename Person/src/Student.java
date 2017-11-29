@@ -11,16 +11,37 @@ public class Student extends Person{
 		this.major = major;
 	}
 	
-	public double getGpa()
-	{
+	
+	public double getGpa() {
 		return gpa;
 	}
-	
-	public String getMajor()
-	{
+
+
+	public void setGpa(double gpa) {
+		this.gpa = gpa;
+	}
+
+
+	public String getGender() {
+		return gender;
+	}
+
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
+	public String getMajor() {
 		return major;
 	}
-	
+
+
+	public void setMajor(String major) {
+		this.major = major;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Student FirstName =" + getFirstName() + ", FamilyName =" + getFamilyName();
