@@ -38,8 +38,11 @@ public class Runner {
 	
 	public static void main(String[] args) 
 	{
-		Person[] students = Person[5] students;
-		
+		for (int i = 0; i < 34; i++)
+		{
+		Person [] students = { randomStudent() };
+		}
+		 
 		Classroom.printClass( Person[] students, (Person) randomTeacher());
 		double avg = Classroom.classAverage();
 		System.out.println(x);
