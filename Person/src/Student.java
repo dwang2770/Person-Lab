@@ -42,6 +42,6 @@ public class Student extends Person{
 	}
 
 	public String toString() {
-		return getFirstName() + "," + getFamilyName();
+		return getFirstName() + ", " + getFamilyName();
 	}
 }

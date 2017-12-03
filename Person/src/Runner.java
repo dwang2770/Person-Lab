@@ -38,22 +38,22 @@ public class Runner {
 		double height = Math.random() * 1.9;
 	
 		Random r1 = new Random();
-		return new Student(gpa, firstNames [r1.nextInt(firstNames.length)],familyNames [r1.nextInt(familyNames.length)], gender [r1.nextInt(gender.length)]
-				, major [r1.nextInt(major.length)], age, height);
+		return new Student(gpa,  gender [r1.nextInt(gender.length)]
+			    , major [r1.nextInt(major.length)], firstNames [r1.nextInt(firstNames.length)],familyNames [r1.nextInt(familyNames.length)],age, height);
 	}
 	
 	public static void main(String[] args) 
 	{	
+		System.out.println("Students:");
 		for (int x = 0; x < 34; x++)
 		{
 			students[x] = randomStudent();
+			System.out.println(students[x].toString());
 		}
-		
+
+		System.out.println("\n");
 		System.out.println("Teacher and Subject:");
 		System.out.println(randomTeacher());
-		System.out.println("\n");
-		System.out.println("Students:");
-		System.out.println(randomStudent());
 		System.out.println("\n");
 		System.out.println("Class Average:");
 		System.out.println();
