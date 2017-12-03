@@ -1,8 +1,8 @@
 
 public class Teacher extends Person
 {	
-	private String subject;
-	private String title;
+	private String subject;		//Subject the teacher teaches
+	private String title;		//Prefix of teacher
 	public Teacher(String subject, String title, String firstName, String familyName, int age, double height)
 	
 	{
@@ -29,7 +29,7 @@ public class Teacher extends Person
 
 	@Override
 	public String toString() {
-		return "Teacher's Name = " + getTitle() + getFamilyName();
+		return getTitle() + " " + getFamilyName();
 	}
 	
 }

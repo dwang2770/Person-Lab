@@ -17,7 +17,7 @@ public class Runner {
 	
 	private static String[] gender = {"Male", "Female"}; // subjective to personal belief / opinions;
 	
-	private static Person[] students;
+	private static Person[] students = new Person[35];
 	
 	private static Person teacher;
 	
@@ -46,8 +46,17 @@ public class Runner {
 	{	
 		for (int x = 0; x < 34; x++)
 		{
-		Person[x] students = { randomStudent() };
+			students[x] = randomStudent();
 		}
+		
+		System.out.println("Teacher and Subject:");
+		System.out.println(randomTeacher());
+		System.out.println("\n");
+		System.out.println("Students:");
+		System.out.println(randomStudent());
+		System.out.println("\n");
+		System.out.println("Class Average:");
+		System.out.println();
 	}
 
 }

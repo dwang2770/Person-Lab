@@ -1,9 +1,9 @@
 
 public abstract class Person {
-	private String firstName; 
-	private String familyName;
-	private int age;	
-	private double height;	//In meters
+	private String firstName; 		//First Name of Person
+	private String familyName;		//Family Name of Person
+	private int age;				//Person's Age
+	private double height;			//In meters
 	
 	public Person(String firstName, String familyName, int age, double height)
 	{

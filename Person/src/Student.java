@@ -1,7 +1,7 @@
 public class Student extends Person{
-	private double gpa;
-	private String gender;
-	private String major;
+	private double gpa;			//Student GPA
+	private String gender;		//Student Gender
+	private String major;		//Student Major
 	
 	public Student(double gpa, String gender, String major, String firstName, String familyName, int age, double height)
 	{
@@ -41,9 +41,7 @@ public class Student extends Person{
 		this.major = major;
 	}
 
-
-	@Override
 	public String toString() {
-		return "Student FirstName =" + getFirstName() + ", FamilyName =" + getFamilyName();
+		return getFirstName() + "," + getFamilyName();
 	}
 }

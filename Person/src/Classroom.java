@@ -1,7 +1,7 @@
 
 public class Classroom {
-	Person[] students;
-	Person teacher;
+	Person[] students;		//Array of students
+	Person teacher;			//One teacher
 	
 	public Classroom(Person[] students, Person teacher)
 	{
