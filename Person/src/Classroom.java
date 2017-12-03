@@ -43,6 +43,6 @@ public class Classroom {
 	
 	public void printClass(Person[] students, Person teacher)
 	{
-		System.out.println(((Teacher)teacher).toString() + "Subject: " + getSubject() + " List of Students: " + getStudents());
+		System.out.println(((Teacher)teacher).toString() + "Subject: " + getSubject() + " Students: " + getStudents());
 	}
 }

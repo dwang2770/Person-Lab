@@ -17,35 +17,37 @@ public class Runner {
 	
 	private static String[] gender = {"Male", "Female"}; // subjective to personal belief / opinions;
 	
+	private static Person[] students;
+	
+	private static Person teacher;
+	
+	public static Teacher randomTeacher()
+	{
+		int age = 35;
+		double height = 1.8;
+		Random r2 = new Random();
+		return new Teacher (firstNames [r2.nextInt(firstNames.length)],familyNames [r2.nextInt(familyNames.length)], title [r2.nextInt(title.length)], 
+				subject [r2.nextInt(subject.length)], age, height);
+	}
+	
+	
 	public static Student randomStudent()
 	{
 		double gpa = Math.random() * 4;
 		int age = (int)Math.random() * 17;
 		double height = Math.random() * 1.9;
 	
-		Random r2d2 = new Random();
-		return new Student(gpa, firstNames [r2d2.nextInt(firstNames.length)],familyNames [r2d2.nextInt(familyNames.length)], gender [r2d2.nextInt(gender.length)]
-				, major [r2d2.nextInt(major.length)], age, height);
-	}
-	public static Teacher randomTeacher()
-	{
-		int age = 35;
-		double height = 1.8;
-		Random c3po = new Random();
-		return new Teacher (firstNames [c3po.nextInt(firstNames.length)],familyNames [c3po.nextInt(familyNames.length)], title [c3po.nextInt(title.length)], 
-				subject [c3po.nextInt(subject.length)], age, height);
+		Random r1 = new Random();
+		return new Student(gpa, firstNames [r1.nextInt(firstNames.length)],familyNames [r1.nextInt(familyNames.length)], gender [r1.nextInt(gender.length)]
+				, major [r1.nextInt(major.length)], age, height);
 	}
 	
 	public static void main(String[] args) 
-	{
-		for (int i = 0; i < 34; i++)
+	{	
+		for (int x = 0; x < 34; x++)
 		{
-		Person [] students = { randomStudent() };
+		Person[x] students = { randomStudent() };
 		}
-		 
-		Classroom.printClass( Person[] students, (Person) randomTeacher());
-		double avg = Classroom.classAverage();
-		System.out.println(x);
 	}
 
 }
