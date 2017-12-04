@@ -2,7 +2,7 @@
 public class Teacher extends Person
 {	
 	private String subject;		//Subject the teacher teaches
-	private String title;		//Prefix of teacher
+	private String title;		//Prefix of teacher to address them by
 	public Teacher(String subject, String title, String firstName, String familyName, int age, double height)
 	
 	{
@@ -15,6 +15,7 @@ public class Teacher extends Person
 		return subject;
 	}
 
+	//Initializes subject
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
@@ -23,6 +24,7 @@ public class Teacher extends Person
 		return title;
 	}
 
+	//Initializes title
 	public void setTitle(String title) {
 		this.title = title;
 	}

@@ -2,8 +2,8 @@
 public abstract class Person {
 	private String firstName; 		//First Name of Person
 	private String familyName;		//Family Name of Person
-	private int age;				//Person's Age
-	private double height;			//In meters
+	private int age;				//Person's Age in Years
+	private double height;			//Peron's height in Meters
 	
 	public Person(String firstName, String familyName, int age, double height)
 	{
@@ -16,7 +16,8 @@ public abstract class Person {
 	public String getFirstName() {
 		return firstName;
 	}
-
+	
+	//Initializes firstName
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
@@ -24,7 +25,8 @@ public abstract class Person {
 	public String getFamilyName() {
 		return familyName;
 	}
-
+	
+	//Initializes familyName
 	public void setFamilyName(String familyName) {
 		this.familyName = familyName;
 	}
@@ -32,7 +34,8 @@ public abstract class Person {
 	public int getAge() {
 		return age;
 	}
-
+	
+	//Initializes getAge
 	public void setAge(int age) {
 		this.age = age;
 	}
@@ -40,7 +43,8 @@ public abstract class Person {
 	public double getHeight() {
 		return height;
 	}
-
+	
+	//Initializes getHeight
 	public void setHeight(double height) {
 		this.height = height;
 	}

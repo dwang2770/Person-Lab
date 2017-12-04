@@ -13,6 +13,7 @@ public class Classroom {
 		return students;
 	}
 
+	//Initializes students
 	public void setStudents(Person[] students) {
 		this.students = students;
 	}
@@ -21,6 +22,7 @@ public class Classroom {
 		return teacher;
 	}
 
+	//Initializes teacher
 	public void setTeacher(Person teacher) {
 		this.teacher = teacher;
 	}
@@ -30,7 +32,7 @@ public class Classroom {
 		return ((Teacher)this.teacher).getSubject();
 	}
 
-	public double classAverage()
+	public double classAverage()		//GPA is measured from 0 to 4
 	{
 		double total = 0.0;
 		for (Person p : this.students)

@@ -1,5 +1,5 @@
 public class Student extends Person{
-	private double gpa;			//Student GPA
+	private double gpa;			//Student GPA : Measured from 0 to 4
 	private String gender;		//Student Gender
 	private String major;		//Student Major
 	
@@ -8,7 +8,7 @@ public class Student extends Person{
 		super(firstName, familyName, age, height);
 		this.gpa = gpa;
 		this.gender = gender;
-		this.major = major;
+		this.major = major;		
 	}
 	
 	
@@ -16,7 +16,7 @@ public class Student extends Person{
 		return gpa;
 	}
 
-
+	//Initializes gpa
 	public void setGpa(double gpa) {
 		this.gpa = gpa;
 	}
@@ -26,7 +26,7 @@ public class Student extends Person{
 		return gender;
 	}
 
-
+	//Initializes gender
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
@@ -36,11 +36,12 @@ public class Student extends Person{
 		return major;
 	}
 
-
+	//Initializes major
 	public void setMajor(String major) {
 		this.major = major;
 	}
 
+	@Override
 	public String toString() {
 		return getFirstName() + ", " + getFamilyName();		//Prints out the first and last name of the student
 	}
