@@ -29,7 +29,8 @@ public class Teacher extends Person
 
 	@Override
 	public String toString() {
-		return getTitle() + " " + getFamilyName();
+		return getTitle() + " " + getFamilyName() + " - " + getSubject();
+		//Prints out the title and family name of the teacher plus the subject they teach
 	}
 	
 }

@@ -26,8 +26,8 @@ public class Runner {
 		int age = 35;
 		double height = 1.8;
 		Random r2 = new Random();
-		return new Teacher (firstNames [r2.nextInt(firstNames.length)],familyNames [r2.nextInt(familyNames.length)], title [r2.nextInt(title.length)], 
-				subject [r2.nextInt(subject.length)], age, height);
+		return new Teacher (subject [r2.nextInt(subject.length)],title [r2.nextInt(title.length)], firstNames [r2.nextInt(firstNames.length)], 
+				familyNames [r2.nextInt(familyNames.length)], age, height);
 	}
 	
 	
